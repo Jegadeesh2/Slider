@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --button: rgb(0, 0, 255);
+  --shadow: rgb(128, 128, 128);
+  --bg : rgb(144, 178, 252);
+  --hover:rgb(44, 44, 253);
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+h1{
+  margin-top: 2rem;
+}
+
+.underline{
+  height: 3px;
+  width: 6rem;
+  background-color: var(--button);
+  margin: 2px auto;
+}
+
+.container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  margin: 2rem auto 2px auto;
+  padding: 2rem;
+  box-shadow: 5px 10px 18px var(--shadow);
+}
+
+.image-container{
+  margin: auto;
+  width: 10.5rem;
+  height: 10.3rem;
+  background-color: var(--button);
+  border-radius: 75%;
+}
+
+.image{
+  float: left;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.quote-icon{
+  position: relative;
+  top: -8.2rem;
+  right: 4.2rem;
+  width: 2rem;
+  height: auto;
+  padding:10px 10px 4px 10px;
+  background-color: var(--button);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.author{
+  margin: 1rem auto 1px auto;
+  text-transform: uppercase;
+}
+
+.job{
+  color: var(--hover);
+  margin: 1px;
+  text-transform: capitalize;
+}
+
+.info{
+  padding: 12px 2rem;
+  text-align: left;
+}
+
+.button-container{
+  margin: 1rem ;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prev-btn,.next-btn{
+  background-color: var(--white);
+  color: var(--button);
+  scale: 2.5;
+  cursor: pointer;
+}
+
+.prev-btn:hover,.next-btn:hover{
+  color: var(--hover);
+  scale:2.7;
+}
+
+.prev-btn:active{
+transform: translate(-1.5px);
+}
+
+.next-btn:active{
+  transform: translate(1.5px);
+}
+
+.btn{
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  background-color: var(--button);
+  color: var(--white);
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 4px 4px 5px rgb(128, 128, 128);
+  margin: 1rem auto 1px auto;
+  width: 70%;
+  cursor: pointer;
+}
+
+.random-btn:active{
+  box-shadow: 0 0 var(--white);
+  transform: translate(4px,4px);
+}
